@@ -1,8 +1,7 @@
-# Cake Shop
+# ASP.NET CORE Web Site
 
-A sample Cake Shop Website built with ASP.NET Core (Multi-Page Application)
+A sample Cake Shop Website built with ASP.NET Core (Multi-Page Application) and MS SQL DB
 
-![screenshot1](./screenshots/screenshot1.png)
 
 ## APP/Code Features 
 - Only Admin can perform Create/Edit/Delete cakes & manage Orders.
@@ -28,36 +27,14 @@ A sample Cake Shop Website built with ASP.NET Core (Multi-Page Application)
 
    > Make sure, dotnet core SDK & npm is installed in your machine.
 
-- **Using VS2017**
+- **Using VS2019**
      ``` 
-       > git clone https://github.com/ritwickdey/Cake-Shop.git
+       > git clone https://github.com/chatru-vs/Website-aspnet-core
        > cd Cake-Shop/
     ```
-    - Now Open the `CakeShop.sln` through `VS2017`.
+    - Now Open the `CakeShop.sln` through `VS2019`.
     - Open `appsettings.json` & change the connection string. (But wait! you may not need to change it as this the default connection string of `SQL Server Express` that comes with `Visual Studio`).
     - Hit `Ctrl+Shift+B` to build.
     - Open `Package Manager Console` from `Tools` and enter `update-database`.
     - Hit `Ctrl+F5` to run without debugging.
 
-- **Using CLI**
-    ```
-        > git clone https://github.com/ritwickdey/Cake-Shop.git
-        > cd Cake-Shop/Cake-Shop/
-        > npm install
-        > dotnet restore
-        > set ASPNETCORE_ENVIRONMENT=Development
-        > set ConnectionStrings:DefaultConnection="<YOUR CONNECTION STRING>"
-        > npm i webpack -g
-        > webpack --config webpack.config.js
-        > npm run build
-        > dotnet build 
-        > dotnet ef database update
-        > dotnet run 
-    ```
-
-## Sceenshots
-![screenshot2](./screenshots/screenshot2.png)
-![screenshot3](./screenshots/screenshot3.png)
-![screenshot4](./screenshots/screenshot4.png)
-![screenshot5](./screenshots/screenshot5.png)
-![screenshot6](./screenshots/screenshot6.png)
